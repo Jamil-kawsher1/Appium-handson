@@ -10,4 +10,12 @@ describe("Android Element", () => {
     //checking If Action Bar Is available or not not as element
     await expect(actionBar).toBeExisting();
   });
+
+  it.only("Find Element By Class Name ", async () => {
+    const className = await $("android.widget.TextView");
+    // console.log(await className.getText());
+    //Assertion
+
+    expect(className).toHaveText("API Demo");
+  });
 });
