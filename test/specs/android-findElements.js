@@ -42,4 +42,18 @@ describe("Android Element", () => {
 
     expect(textAssertion).toHaveText("You selected: 1 , Command two");
   });
+
+  it("Find Multiple Element", async () => {
+    //Use $$ To locate Multiple Element at Once
+    //Find Mutiple Element
+    const textList = await $$("android.widget.TextView");
+
+    //loop Through element
+
+    for (element of textList) {
+      console.log(element);
+    }
+
+    // Assert Them
+  });
 });
