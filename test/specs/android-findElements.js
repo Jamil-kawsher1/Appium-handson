@@ -43,17 +43,36 @@ describe("Android Element", () => {
     expect(textAssertion).toHaveText("You selected: 1 , Command two");
   });
 
-  it("Find Multiple Element", async () => {
+  it.only("Find Multiple Element", async () => {
     //Use $$ To locate Multiple Element at Once
+
+    const expectedList = [
+      "API Demos",
+      "Access 'ibility",
+      "Accessibility",
+      "Animation",
+      "App",
+      "Content",
+      "Graphics",
+      "Media",
+      "NFC",
+      "OS",
+      "Preference",
+      "Text",
+      "Views",
+    ];
+    const actualList = [];
     //Find Mutiple Element
     const textList = await $$("android.widget.TextView");
 
     //loop Through element
 
-    for (element of textList) {
-      console.log(element);
+    for (const el of textList) {
+      // actualList.push(await element.getText());
+      console.log(el);
     }
 
     // Assert Them
+    // expect(actualList).toEqual(expectedList);
   });
 });
