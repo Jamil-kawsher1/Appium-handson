@@ -5,7 +5,7 @@ describe("Input Value", async () => {
     await $("~Views").click();
 
     //Clicking on Auto complete Element using Xpath
-
+    // optional using text //*[@text='Auto Complete']
     await $("//android.widget.TextView[@text='Auto Complete']").click();
     //
     await $("//android.widget.TextView[@content-desc='1. Screen Top']").click();
