@@ -59,6 +59,7 @@ exports.config = {
       "appium:automationName": "UiAutomator2",
       "appium:app":
         "D:/wdioAppium/appiumPlusWebdriverIoHandson/Android/app/ApiDemosdebug.apk",
+      // "appium:noReset": true,
     },
   ],
 

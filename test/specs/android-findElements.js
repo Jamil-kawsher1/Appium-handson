@@ -43,7 +43,7 @@ describe("Android Element", () => {
     expect(textAssertion).toHaveText("You selected: 1 , Command two");
   });
 
-  it.only("Find Multiple Element", async () => {
+  it("Find Multiple Element", async () => {
     //Use $$ To locate Multiple Element at Once
 
     const expectedList = [
