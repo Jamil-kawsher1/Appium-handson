@@ -55,7 +55,7 @@ exports.config = {
       platformName: "Android",
       // browserName: 'Chrome',
       "appium:deviceName": "emulator-5554",
-      "appium:platformVersion": "10.0",
+      "appium:platformVersion": "14.0",
       "appium:automationName": "UiAutomator2",
       "appium:app":
         "D:/wdioAppium/appiumPlusWebdriverIoHandson/Android/app/ApiDemosdebug.apk",
