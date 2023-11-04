@@ -13,7 +13,10 @@ describe("Scrolling in Android APP using Verious Method", () => {
 
         //Scrolling to the End
 
-        await $('android=new UIScrollable(new UiSelector().scrollable(true)).scrollToEnd(1,5)');
+        await $('android=new UiScrollable(new UiSelector().scrollable(true)).scrollToEnd(1,5)');
+
+        
+
         //Clicking Secure Surfaces
 
         await $("~Secure Surfaces").click()
